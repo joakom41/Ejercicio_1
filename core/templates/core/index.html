@@ -1,0 +1,286 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Banner Section -->
+<section class="banner">
+    <div class="banner-slide active">
+        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg" alt="Innovación Digital">
+        <div class="banner-content">
+            <h2>Innovación Digital</h2>
+            <p>Transformamos tus ideas en realidad digital</p>
+            <button class="banner-btn">Conoce Más</button>
+        </div>
+    </div>
+    
+    <div class="banner-slide">
+        <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg" alt="Soluciones Modernas">
+        <div class="banner-content">
+            <h2>Soluciones Modernas</h2>
+            <p>Tecnología de vanguardia para tu negocio</p>
+            <button class="banner-btn">Descubre Más</button>
+        </div>
+    </div>
+    
+    <div class="banner-slide">
+        <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Experiencias Únicas">
+        <div class="banner-content">
+            <h2>Experiencias Únicas</h2>
+            <p>Diseñamos experiencias que conectan con tus usuarios</p>
+            <button class="banner-btn">Empieza Ahora</button>
+        </div>
+    </div>
+    
+    <!-- Navigation arrows -->
+    <button class="banner-nav prev" onclick="prevSlide()">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="banner-nav next" onclick="nextSlide()">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+    
+    <!-- Dots indicator -->
+    <div class="banner-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+    </div>
+</section>
+
+<!-- Main Content Area -->
+<div class="main-container">
+    <!-- Content Section -->
+    <section class="content-section">
+        <article class="main-content">
+            <h1>Bienvenido a MiWeb</h1>
+            <p class="intro-text">Somos una empresa dedicada a crear soluciones digitales innovadoras que impulsan el crecimiento de tu negocio.</p>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creamos sitios web modernos, responsivos y optimizados para todos los dispositivos.</p>
+                </div>
+                
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Diseño UX/UI</h3>
+                    <p>Diseñamos interfaces intuitivas que ofrecen experiencias excepcionales a tus usuarios.</p>
+                </div>
+                
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Marketing Digital</h3>
+                    <p>Estrategias de marketing digital que aumentan tu visibilidad y generan más conversiones.</p>
+                </div>
+            </div>
+            
+            <div class="featured-content">
+                <h2>Nuestros Proyectos Destacados</h2>
+                <div class="project-showcase">
+                    <div class="project-item">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" alt="Proyecto 1">
+                        <div class="project-info">
+                            <h4>E-commerce Moderno</h4>
+                            <p>Plataforma de comercio electrónico con tecnología de última generación.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <img src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg" alt="Proyecto 2">
+                        <div class="project-info">
+                            <h4>App Móvil Corporativa</h4>
+                            <p>Aplicación móvil que mejora la comunicación interna de empresas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Publicidad Section 1 -->
+            <div class="sidebar-widget ad-widget">
+                <h3>Publicidad</h3>
+                <div class="ad-banner">
+                    <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg" alt="Anuncio 1">
+                    <div class="ad-content">
+                        <h4>¡Oferta Especial!</h4>
+                        <p>50% descuento en desarrollo web</p>
+                        <button class="ad-btn">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Posts -->
+            <div class="sidebar-widget">
+                <h3>Artículos Recientes</h3>
+                <div class="recent-posts">
+                    <div class="recent-post">
+                        <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg" alt="Post 1">
+                        <div class="post-info">
+                            <h4>Tendencias en Desarrollo Web 2025</h4>
+                            <span class="post-date">15 Enero, 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="recent-post">
+                        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Post 2">
+                        <div class="post-info">
+                            <h4>UX/UI: Mejores Prácticas</h4>
+                            <span class="post-date">12 Enero, 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="recent-post">
+                        <img src="https://images.pexels.com/photos/1181216/pexels-photo-1181216.jpeg" alt="Post 3">
+                        <div class="post-info">
+                            <h4>Marketing Digital Efectivo</h4>
+                            <span class="post-date">8 Enero, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="sidebar-widget newsletter-widget">
+                <h3>Newsletter</h3>
+                <p>Suscríbete para recibir las últimas noticias y ofertas especiales.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            
+            <!-- Publicidad Section 2 -->
+            <div class="sidebar-widget ad-widget">
+                <div class="ad-banner vertical">
+                    <img src="https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpeg" alt="Anuncio 2">
+                    <div class="ad-content">
+                        <h4>Consultoría Gratuita</h4>
+                        <p>Analizamos tu proyecto sin costo</p>
+                        <button class="ad-btn">Contactar</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+</div>
+
+<!-- Social Media Section -->
+<section class="social-section">
+    <div class="social-container">
+        <h2>Conecta con Nosotros</h2>
+        <p>Síguenos en nuestras redes sociales para estar al día con las últimas novedades</p>
+        
+        <div class="social-grid">
+            <div class="social-card facebook">
+                <div class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="social-info">
+                    <h3>Facebook</h3>
+                    <p>15,240 seguidores</p>
+                    <a href="#" class="social-btn">Seguir</a>
+                </div>
+            </div>
+            
+            <div class="social-card twitter">
+                <div class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="social-info">
+                    <h3>Twitter</h3>
+                    <p>8,950 seguidores</p>
+                    <a href="#" class="social-btn">Seguir</a>
+                </div>
+            </div>
+            
+            <div class="social-card instagram">
+                <div class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="social-info">
+                    <h3>Instagram</h3>
+                    <p>22,180 seguidores</p>
+                    <a href="#" class="social-btn">Seguir</a>
+                </div>
+            </div>
+            
+            <div class="social-card linkedin">
+                <div class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="social-info">
+                    <h3>LinkedIn</h3>
+                    <p>5,670 conexiones</p>
+                    <a href="#" class="social-btn">Conectar</a>
+                </div>
+            </div>
+            
+            <div class="social-card youtube">
+                <div class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="social-info">
+                    <h3>YouTube</h3>
+                    <p>12,450 suscriptores</p>
+                    <a href="#" class="social-btn">Suscribirse</a>
+                </div>
+            </div>
+            
+            <div class="social-card tiktok">
+                <div class="social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="social-info">
+                    <h3>TikTok</h3>
+                    <p>18,720 seguidores</p>
+                    <a href="#" class="social-btn">Seguir</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Social Feed Preview -->
+        <div class="social-feed">
+            <h3>Últimas Publicaciones</h3>
+            <div class="feed-grid">
+                <div class="feed-post">
+                    <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg" alt="Post social 1">
+                    <div class="feed-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>hace 2 horas</span>
+                    </div>
+                </div>
+                <div class="feed-post">
+                    <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg" alt="Post social 2">
+                    <div class="feed-overlay">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>hace 5 horas</span>
+                    </div>
+                </div>
+                <div class="feed-post">
+                    <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Post social 3">
+                    <div class="feed-overlay">
+                        <i class="fab fa-twitter"></i>
+                        <span>hace 1 día</span>
+                    </div>
+                </div>
+                <div class="feed-post">
+                    <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" alt="Post social 4">
+                    <div class="feed-overlay">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>hace 2 días</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
